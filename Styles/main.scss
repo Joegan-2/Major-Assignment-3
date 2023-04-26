@@ -1,12 +1,55 @@
 @import '_variables';
 @import '_mixins';
-@media only screen and (min-width: 768px) {
-    
+.grid {
+    display: grid;
+    background-color: $bgcol + #131305;
+    grid-gap: 10px;
+    @include media-query(small){
+        grid-template-columns: auto;
+    }
+    @include media-query(med){
+        grid-template-columns: auto auto;
+    }
+    @include media-query(big){
+        grid-template-columns: auto auto auto auto;
+    }
 }
-
-@media only screen and (max-width: 768px) and (min-width: 576px) {
-
+.grid-item {
+    background-color: $hlcol;
+    border: 5px solid $hlcol + #101000;
+    padding: 10px;
+    font-family: $derFont;
+    @include text(15px,center);
+    par {
+        margin-top: 50px;
+        text-align: justify !important;
+        padding: 10px;
+    }
+    start {
+        text-align: justify !important;
+        padding: 10px;
+      }
+  }
+img{
+    @include media;
+    @include media-query(small){
+        max-width: 50%;
+        max-height: 50%;
+    }
+    @include media-query(med){
+        max-width: 75%;
+        max-height: 75%;
+    }
 }
-@media only screen and (max-width: 576px) {
-    
+video{
+    @include media;
+    @include media-query(small){
+        max-width: 40%;
+        max-height: 40%;
+    }
+}
+body{
+    @include text(20px,center);
+    background-color: $bgcol;
+    font-family: 'Roboto';
 }

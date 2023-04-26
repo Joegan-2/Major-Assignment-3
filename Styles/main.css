@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  background-color: #c2bcae;
+  grid-gap: 10px; }
+  @media (max-width: 767px) {
+    .grid {
+      grid-template-columns: auto; } }
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: auto auto; } }
+  @media (min-width: 1280px) {
+    .grid {
+      grid-template-columns: auto auto auto auto; } }
+
+.grid-item {
+  background-color: #bfc221;
+  border: 5px solid #cfd221;
+  padding: 10px;
+  font-family: "Courier New";
+  font-size: 15px;
+  color: #000000;
+  text-align: center; }
+  .grid-item par {
+    margin-top: 50px;
+    text-align: justify !important;
+    padding: 10px; }
+  .grid-item start {
+    text-align: justify !important;
+    padding: 10px; }
+
+img {
+  display: block;
+  width: auto;
+  height: auto; }
+  @media (max-width: 767px) {
+    img {
+      max-width: 50%;
+      max-height: 50%; } }
+  @media (min-width: 768px) {
+    img {
+      max-width: 75%;
+      max-height: 75%; } }
+
+video {
+  display: block;
+  width: auto;
+  height: auto; }
+  @media (max-width: 767px) {
+    video {
+      max-width: 40%;
+      max-height: 40%; } }
+
+body {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  background-color: #afa9a9;
+  font-family: 'Roboto'; }
+
+/*# sourceMappingURL=main.css.map */
