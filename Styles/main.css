@@ -5,7 +5,7 @@
   @media (max-width: 767px) {
     .grid {
       grid-template-columns: auto; } }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1279px) {
     .grid {
       grid-template-columns: auto auto; } }
   @media (min-width: 1280px) {
@@ -30,31 +30,49 @@
 
 img {
   display: block;
-  width: auto;
-  height: auto; }
+  width: 720;
+  height: 1280; }
   @media (max-width: 767px) {
     img {
       max-width: 50%;
       max-height: 50%; } }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1279px) {
     img {
       max-width: 75%;
       max-height: 75%; } }
+  @media (min-width: 1280px) {
+    img {
+      max-width: 90%;
+      max-height: 90%; } }
 
 video {
   display: block;
-  width: auto;
-  height: auto; }
+  width: 720;
+  height: 1280; }
   @media (max-width: 767px) {
     video {
       max-width: 40%;
       max-height: 40%; } }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    video {
+      max-width: 60%;
+      max-height: 60%; } }
+  @media (min-width: 1280px) {
+    video {
+      max-width: 80%;
+      max-height: 80%; } }
 
 body {
   font-size: 20px;
   color: #000000;
   text-align: center;
   background-color: #afa9a9;
-  font-family: 'Roboto'; }
+  font-family: 'Roboto';
+  background-image: url(../Images/www.usnews.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+h1 {
+  background-color: #afa9a9; }
 
 /*# sourceMappingURL=main.css.map */

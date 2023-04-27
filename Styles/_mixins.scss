@@ -4,7 +4,7 @@
         @media (max-width: 767px) { @content; }
     }
     @else if $size == med {
-        @media (min-width: 768px) { @content; }
+        @media (min-width: 768px) and (max-width: 1279px) { @content; }
     }
     @else if $size == big {
         @media (min-width: 1280px) { @content; }
@@ -18,6 +18,4 @@
 }
 @mixin media{
     display: block;
-    width: auto;
-    height: auto;
 }

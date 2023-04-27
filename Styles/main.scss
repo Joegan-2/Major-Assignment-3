@@ -40,6 +40,12 @@ img{
         max-width: 75%;
         max-height: 75%;
     }
+    @include media-query(big){
+        max-width: 90%;
+        max-height: 90%;
+    }
+    width: $width;
+    height: $height;
 }
 video{
     @include media;
@@ -47,9 +53,27 @@ video{
         max-width: 40%;
         max-height: 40%;
     }
+    @include media-query(med){
+        max-width: 60%;
+        max-height: 60%;
+    }
+    @include media-query(big){
+        max-width: 80%;
+        max-height: 80%;
+    }
+    width: $width;
+    height: $height;
 }
 body{
     @include text(20px,center);
     background-color: $bgcol;
     font-family: 'Roboto';
+    //background stuff
+    background-image: url(../Images/www.usnews.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    background-color: $bgcol;
 }
